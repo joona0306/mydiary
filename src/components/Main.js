@@ -1,12 +1,8 @@
 import React from "react";
 import { Contents } from "../styled/Contents";
 
-const Main = () => {
-  return (
-    <Contents>
-      <div className="main-inner">메인영역</div>
-    </Contents>
-  );
+const Main = props => {
+  return <Contents>{props.children}</Contents>;
 };
 
 export default Main;
