@@ -4,18 +4,27 @@ import { BottomBar } from "../styled/BottomBar";
 const Footer = props => {
   return (
     <BottomBar>
+      <div className="fab">
+        <button
+          onClick={() => {
+            props.handleClickHome();
+          }}
+        >
+          <img src={`/images/icons/${props.icon}`} />
+        </button>
+      </div>
       <div className="leading-icon">
         <button>
-          <img src="/images/icons/icon 1.svg" />
+          <img src="/images/icons/menu.svg" />
         </button>
         <button>
-          <img src="/images/icons/icon 2.svg" />
+          <img src="/images/icons/edit.svg" />
         </button>
         <button>
-          <img src="/images/icons/icon 3.svg" />
+          <img src="/images/icons/keyboard.svg" />
         </button>
         <button>
-          <img src="/images/icons/icon 4.svg" />
+          <img src="/images/icons/search.svg" />
         </button>
       </div>
       <p>{props.children}</p>

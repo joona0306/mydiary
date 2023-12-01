@@ -25,8 +25,8 @@
 }
 
 button {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -36,4 +36,14 @@ button {
   border: none;
   background: transparent;
   cursor: pointer;
+}
+.fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #fdb;
+  /* M3/Elevation Light/3 */
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 4px 8px 3px rgba(0, 0, 0, 0.15);
 }
